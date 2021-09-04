@@ -50,13 +50,13 @@ Example:
 </li>
 
 <li>Response code: 201 (CREATED)</li>
-
 </ul>
 
 <br>
 <br>
 
 2. Read (all classes)
+<ul>
 <li> <b>Route:</b> GET/classes</li>
 <li> <b>Effect on datebase:</b> None</li>
 <li> <b>Response body:</b>
@@ -98,11 +98,13 @@ Example:
 </li>
 
 <li><b>Response code:</b> 200 (OK)</li>
+</ul>
 
 <br>
 <br>
 
 3. Read (one class)
+<ul>
 <li> <b>Route:</b> GET/classes/:id</li>
 <li> <b>Effect on datebase:</b> None</li>
 <li> <b>Response body:</b>
@@ -124,32 +126,36 @@ Example:
 
 </li>
 <li><b>Response code:</b> 200 (OK)</li>
+</ul>
 
 <br>
 <br>
 
 4. Update
-   <li><b>Route:</b> PUT/classes/:id</li>
-   <li><b>Effect on datebase:</b> Updates the class with the specified ID with the information provided in the request body</li>
-   <li><b>Response body:</b>
-   `{ "class": The updated class now saved in the database }`
+<ul>
+ 
+     <li><b>Route:</b> PUT/classes/:id</li>
+     <li><b>Effect on datebase:</b> Updates the class with the specified ID with the information provided in the request body</li>
+     <li><b>Response body:</b>
+     `{ "class": The updated class now saved in the database }`
 
-   Example:
+Example:
 
-   ```js
-   {
-            "class": {
-                "id": 2
-                "name": "Boxing",
-                "trainer": "Bicep Barry",
-                "duration": 0.5
-             }
-        }
-   ```
+```js
+{
+         "class": {
+             "id": 2
+             "name": "Boxing",
+             "trainer": "Bicep Barry",
+             "duration": 0.5
+          }
+     }
+```
 
-   </li>
+      </li>
 
 <li><b>Response code:</b> 200 (OK)</li>
+</ul>
 
 <br>
 <br>
