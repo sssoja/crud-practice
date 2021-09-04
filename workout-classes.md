@@ -133,13 +133,13 @@ Example:
 
 4. Update
 <ul>
- 
-     <li><b>Route:</b> PUT/classes/:id</li>
+<li><b>Route:</b> PUT/classes/:id</li>
      <li><b>Effect on datebase:</b> Updates the class with the specified ID with the information provided in the request body</li>
      <li><b>Response body:</b>
-     `{ "class": The updated class now saved in the database }`
 
-Example:
+`{ "class": The updated class now saved in the database }`
+
+     Example:
 
 ```js
 {
@@ -152,8 +152,7 @@ Example:
      }
 ```
 
-      </li>
-
+</li>
 <li><b>Response code:</b> 200 (OK)</li>
 </ul>
 
@@ -170,3 +169,6 @@ Example:
 <br>
 
 As you get more practice with designing storage systems, incorporating CRUD operations into your models will become easier and easier.
+
+Taken from Code Academy's article What is CRUD?
+https://www.codecademy.com/articles/what-is-crud
