@@ -26,10 +26,12 @@ What response code would each route return?
 <h2>CRUD Answers</h2>
 
 1. Create
-<h5>Route</h5>: POST/classes
-<h5>Effect on datebase:</h5> Adds the class provided in the request body to the database
-<h5>Response body:</h5>
- `{ "class": The Newly-Created Class }`
+<ul>
+  <li> <b>Route</b>: POST/classes </li>
+   <li><b>Effect on datebase:</b> Adds the class provided in the request body to the database</li>
+   <li><b>Response body:</b>
+
+`{ "class": The Newly-Created Class }`
 
 Example:
 
@@ -43,13 +45,18 @@ Example:
 
 ```
 
-Response code: 201 (CREATED)
+</li>
+
+<li>Response code: 201 (CREATED)</li>
+
+</ul>
 
 2. Read (all classes)
-<h5>Route:</h5> GET/classes
-<h5>Effect on datebase:</h5> None
-<h5>Response body:</h5>
- `{ "classes": [ Array of All Saved Classess ] }`
+<li> <b>Route:</b> GET/classes</li>
+<li> <b>Effect on datebase:</b> None</li>
+<li> <b>Response body:</b>
+
+`{ "classes": [ Array of All Saved Classess ] }`
 
 Example:
 
@@ -83,13 +90,16 @@ Example:
 }
 ```
 
-<b>Response code:</h5> 200 (OK)
+</li>
+
+<li><b>Response code:</b> 200 (OK)</li>
 
 3. Read (one class)
-<h5>Route:</h5> GET/classes/:id
-<h5>Effect on datebase:</h5> None
-<h5>Response body:</h5>
- `{"class": The class with the specified ID}`
+<li> <b>Route:</b> GET/classes/:id</li>
+<li> <b>Effect on datebase:</b> None</li>
+<li> <b>Response body:</b>
+
+`{"class": The class with the specified ID}`
 
 Example:
 
@@ -104,13 +114,14 @@ Example:
         }
 ```
 
-<b>Response code:</h5> 200 (OK)
+</li>
+<li><b>Response code:</b> 200 (OK)</li>
 
 4. Update
-   <h5>Route:</h5> PUT/classes/:id
-   <h5>Effect on datebase:</h5> Updates the class with the specified ID with the information provided in the request body
-   <h5>Response body:</h5>
-    `{ "class": The updated class now saved in the database }`
+   <li><b>Route:</b> PUT/classes/:id</li>
+   <li><b>Effect on datebase:</b> Updates the class with the specified ID with the information provided in the request body</li>
+   <li><b>Response body:</b>
+   `{ "class": The updated class now saved in the database }`
 
    Example:
 
@@ -125,12 +136,14 @@ Example:
         }
    ```
 
-<b>Response code:</h5> 200 (OK)
+   </li>
+
+<li><b>Response code:</b> 200 (OK)</li>
 
 5. Delete
-<h5>Route:</h5> DELETE/classes/:id
-<h5>Effect on datebase:</h5> Removes the class with the specified ID from the database
-<h5>Response body:</h5> None
-<h5>Response code: </h5> 204 (NO CONTENT)
+<li> <b>Route:</b> DELETE/classes/:id</li>
+<li> <b>Effect on datebase:</b> Removes the class with the specified ID from the database</li>
+<li> <b>Response body:</b> None</li>
+<li> <b>Response code: </b> 204 (NO CONTENT)</li>
 
 As you get more practice with designing storage systems, incorporating CRUD operations into your models will become easier and easier.
