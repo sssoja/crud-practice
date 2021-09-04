@@ -36,12 +36,14 @@ What response code would each route return?
 Example:
 
 ```js
-{ "class": {
-"id": 2
-"name": "Boxing",
-"trainer": "Bicep Bill",
-"duration": 0.5
-}}
+{
+    "class": {
+    "id": 2
+    "name": "Boxing",
+    "trainer": "Bicep Bill",
+    "duration": 0.5
+    }
+}
 
 ```
 
@@ -50,6 +52,9 @@ Example:
 <li>Response code: 201 (CREATED)</li>
 
 </ul>
+
+<br>
+<br>
 
 2. Read (all classes)
 <li> <b>Route:</b> GET/classes</li>
@@ -94,6 +99,9 @@ Example:
 
 <li><b>Response code:</b> 200 (OK)</li>
 
+<br>
+<br>
+
 3. Read (one class)
 <li> <b>Route:</b> GET/classes/:id</li>
 <li> <b>Effect on datebase:</b> None</li>
@@ -116,6 +124,9 @@ Example:
 
 </li>
 <li><b>Response code:</b> 200 (OK)</li>
+
+<br>
+<br>
 
 4. Update
    <li><b>Route:</b> PUT/classes/:id</li>
@@ -140,10 +151,16 @@ Example:
 
 <li><b>Response code:</b> 200 (OK)</li>
 
+<br>
+<br>
+
 5. Delete
 <li> <b>Route:</b> DELETE/classes/:id</li>
 <li> <b>Effect on datebase:</b> Removes the class with the specified ID from the database</li>
 <li> <b>Response body:</b> None</li>
 <li> <b>Response code: </b> 204 (NO CONTENT)</li>
+
+<br>
+<br>
 
 As you get more practice with designing storage systems, incorporating CRUD operations into your models will become easier and easier.
