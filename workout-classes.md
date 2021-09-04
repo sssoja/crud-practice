@@ -139,7 +139,7 @@ Example:
 
 `{ "class": The updated class now saved in the database }`
 
-     Example:
+Example:
 
 ```js
 {
