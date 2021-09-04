@@ -7,8 +7,8 @@ The functions to Create, Read, Update, and Delete resources are fundamental comp
 {
   "class": {
     "id": 1
-    "name": “Pure Strength”,
-    "trainer": “Bicep Bob”,
+    "name": "Pure Strength",
+    "trainer": "Bicep Bob",
     "duration": 1.5
    }
 }
