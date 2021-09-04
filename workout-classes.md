@@ -1,7 +1,7 @@
 <h1>CRUD Practice</h1>
 The functions to Create, Read, Update, and Delete resources are fundamental components of a usable storage model. You have now seen a couple of examples for how the CRUD paradigm can help us design systems. Now, try to use CRUD to list out routes for a new example model. Imagine we are trying to design a system that keeps track of workout classes, including the name of each class, who teaches it, and the duration of the class. An example class object would look like:
 <br>
-
+<br>
 ```js
 {
   "class": {
