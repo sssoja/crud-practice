@@ -1,6 +1,7 @@
 <h1>CRUD Practice</h1>
 The functions to Create, Read, Update, and Delete resources are fundamental components of a usable storage model. You have now seen a couple of examples for how the CRUD paradigm can help us design systems. Now, try to use CRUD to list out routes for a new example model. Imagine we are trying to design a system that keeps track of workout classes, including the name of each class, who teaches it, and the duration of the class. An example class object would look like:
 <br>
+
 ```js
 {
   "class": {
@@ -24,10 +25,10 @@ What response code would each route return?
 <h2>CRUD Answers</h2>
 
 1. Create
-   <b>Route</b>: POST/classes
-   <b>Effect on datebase:</b> Adds the class provided in the request body to the database
-   <b>Response body:</b>
-   `{ "class": The Newly-Created Class }`
+<h5>Route</h5>: POST/classes
+<h5>Effect on datebase:</h5> Adds the class provided in the request body to the database
+<h5>Response body:</h5>
+ `{ "class": The Newly-Created Class }`
 
 Example:
 
@@ -44,10 +45,10 @@ Example:
 Response code: 201 (CREATED)
 
 2. Read (all classes)
-   <b>Route:</b> GET/classes
-   <b>Effect on datebase:</b> None
-   <b>Response body:</b>
-   `{ "classes": [ Array of All Saved Classess ] }`
+<h5>Route:</h5> GET/classes
+<h5>Effect on datebase:</h5> None
+<h5>Response body:</h5>
+ `{ "classes": [ Array of All Saved Classess ] }`
 
 Example:
 
@@ -81,13 +82,13 @@ Example:
 }
 ```
 
-<b>Response code:</b> 200 (OK)
+<b>Response code:</h5> 200 (OK)
 
 3. Read (one class)
-   <b>Route:</b> GET/classes/:id
-   <b>Effect on datebase:</b> None
-   <b>Response body:</b>
-   `{"class": The class with the specified ID}`
+<h5>Route:</h5> GET/classes/:id
+<h5>Effect on datebase:</h5> None
+<h5>Response body:</h5>
+ `{"class": The class with the specified ID}`
 
 Example:
 
@@ -102,13 +103,13 @@ Example:
         }
 ```
 
-<b>Response code:</b> 200 (OK)
+<b>Response code:</h5> 200 (OK)
 
 4. Update
-   <b>Route:</b> PUT/classes/:id
-   <b>Effect on datebase:</b> Updates the class with the specified ID with the information provided in the request body
-   <b>Response body:</b>
-   `{ "class": The updated class now saved in the database }`
+   <h5>Route:</h5> PUT/classes/:id
+   <h5>Effect on datebase:</h5> Updates the class with the specified ID with the information provided in the request body
+   <h5>Response body:</h5>
+    `{ "class": The updated class now saved in the database }`
 
    Example:
 
@@ -123,12 +124,12 @@ Example:
         }
    ```
 
-<b>Response code:</b> 200 (OK)
+<b>Response code:</h5> 200 (OK)
 
 5. Delete
-   <b>Route:</b> DELETE/classes/:id
-   <b>Effect on datebase:</b> Removes the class with the specified ID from the database
-   <b>Response body:</b> None
-   <b>Response code: </b> 204 (NO CONTENT)
+<h5>Route:</h5> DELETE/classes/:id
+<h5>Effect on datebase:</h5> Removes the class with the specified ID from the database
+<h5>Response body:</h5> None
+<h5>Response code: </h5> 204 (NO CONTENT)
 
 As you get more practice with designing storage systems, incorporating CRUD operations into your models will become easier and easier.
